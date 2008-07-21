@@ -13,4 +13,13 @@ class ApplicationController < ActionController::Base
   # Uncomment this to filter the contents of submitted sensitive data parameters
   # from your application log (in this case, all fields with names like "password"). 
   # filter_parameter_logging :password
+  
+  before_filter :set_current_user
+  
+protected
+
+  def set_current_user
+    UserActionObserver.current_user = current_user    
+  end
+  
 end

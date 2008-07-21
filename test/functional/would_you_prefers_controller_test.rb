@@ -24,25 +24,25 @@ class WouldYouPrefersControllerTest < ActionController::TestCase
   end
 
   def test_should_show_would_you_prefer
-    get :show, :id => would_you_prefers(:one).id
+    get :show, :id => would_you_prefers(:would_you_prefer_one).id
     assert_response :success
   end
 
   def test_should_get_edit
-    get :edit, :id => would_you_prefers(:one).id
+    get :edit, :id => would_you_prefers(:would_you_prefer_one).id
     assert_response :success
   end
 
   def test_should_update_would_you_prefer
-    put :update, :id => would_you_prefers(:one).id, :would_you_prefer => { }
+    put :update, :id => would_you_prefers(:would_you_prefer_one).id, :would_you_prefer => { }
     assert_redirected_to would_you_prefer_path(assigns(:would_you_prefer))
   end
 
-  def test_should_destroy_would_you_prefer
+  def test_should_:_would_you_prefer
     login_as :admin
     
     assert_difference('WouldYouPrefer.count', -1) do
-      delete :destroy, :id => would_you_prefers(:one).id
+      delete :destroy, :id => would_you_prefers(:would_you_prefer_one).id
     end
 
     assert_redirected_to would_you_prefers_path

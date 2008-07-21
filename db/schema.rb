@@ -9,7 +9,16 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080721141511) do
+ActiveRecord::Schema.define(:version => 20080721142454) do
+
+  create_table "comments", :force => true do |t|
+    t.integer  "would_you_prefer_id"
+    t.integer  "user_id"
+    t.string   "author"
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "users", :force => true do |t|
     t.string   "login",                     :limit => 40

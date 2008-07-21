@@ -1,5 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :would_you_prefers
+  map.resources :comments
+
+  map.resources :would_you_prefers do |would|
+    would.resources :comments
+  end
 
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'sessions', :action => 'new'

@@ -88,7 +88,7 @@ class WouldYouPrefersController < ApplicationController
 
 protected
 
-  def authorized(action)
+  def authorized?(action)
     if action == 'destroy'
       logged_in? && current_user.admin?
     else

@@ -1,12 +1,12 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
-one:
+would_you_prefer_one:
   title: MyString
   first_option: MyString
   second_option: MyString
   published_at: 2008-07-21 16:10:49
 
-two:
+would_you_prefer_two:
   title: MyString
   first_option: MyString
   second_option: MyString

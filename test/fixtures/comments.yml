@@ -1,0 +1,13 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+comment_one:
+  would_you_prefer: would_you_prefer_one
+  user_id: 1
+  author: MyString
+  body: MyText
+
+comment_two:
+  would_you_prefer_id: 1
+  user_id: 1
+  author: MyString
+  body: MyText
