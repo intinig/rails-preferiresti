@@ -1,0 +1,28 @@
+<h1>Editing would_you_prefer</h1>
+
+<% form_for(@would_you_prefer) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </p>
+  <p>
+    <%= f.label :first_option %><br />
+    <%= f.text_field :first_option %>
+  </p>
+  <p>
+    <%= f.label :second_option %><br />
+    <%= f.text_field :second_option %>
+  </p>
+  <p>
+    <%= f.label :published_at %><br />
+    <%= f.datetime_select :published_at %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @would_you_prefer %> |
+<%= link_to 'Back', would_you_prefers_path %>

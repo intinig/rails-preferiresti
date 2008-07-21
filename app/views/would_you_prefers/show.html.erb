@@ -1,0 +1,23 @@
+<p>
+  <b>Title:</b>
+  <%=h @would_you_prefer.title %>
+</p>
+
+<p>
+  <b>First option:</b>
+  <%=h @would_you_prefer.first_option %>
+</p>
+
+<p>
+  <b>Second option:</b>
+  <%=h @would_you_prefer.second_option %>
+</p>
+
+<p>
+  <b>Published at:</b>
+  <%=h @would_you_prefer.published_at %>
+</p>
+
+
+<%= link_to 'Edit', edit_would_you_prefer_path(@would_you_prefer) %> |
+<%= link_to 'Back', would_you_prefers_path %>

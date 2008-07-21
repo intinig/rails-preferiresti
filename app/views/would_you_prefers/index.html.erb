@@ -1,0 +1,26 @@
+<h1>Listing would_you_prefers</h1>
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>First option</th>
+    <th>Second option</th>
+    <th>Published at</th>
+  </tr>
+
+<% for would_you_prefer in @would_you_prefers %>
+  <tr>
+    <td><%=h would_you_prefer.title %></td>
+    <td><%=h would_you_prefer.first_option %></td>
+    <td><%=h would_you_prefer.second_option %></td>
+    <td><%=h would_you_prefer.published_at %></td>
+    <td><%= link_to 'Show', would_you_prefer %></td>
+    <td><%= link_to 'Edit', edit_would_you_prefer_path(would_you_prefer) %></td>
+    <td><%= link_to 'Destroy', would_you_prefer, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New would_you_prefer', new_would_you_prefer_path %>
