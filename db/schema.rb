@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20080721141511) do
+ActiveRecord::Schema.define(:version => 20080721143415) do
 
   create_table "users", :force => true do |t|
     t.string   "login",                     :limit => 40
@@ -37,6 +37,7 @@ ActiveRecord::Schema.define(:version => 20080721141511) do
     t.datetime "published_at"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "viewed",        :default => 0
   end
 
 end

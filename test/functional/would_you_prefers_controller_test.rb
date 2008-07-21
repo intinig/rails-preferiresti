@@ -17,7 +17,7 @@ class WouldYouPrefersControllerTest < ActionController::TestCase
 
   def test_should_create_would_you_prefer
     assert_difference('WouldYouPrefer.count') do
-      post :create, :would_you_prefer => { }
+      post :create, :would_you_prefer => superclassica
     end
 
     assert_redirected_to would_you_prefer_path(assigns(:would_you_prefer))
@@ -46,5 +46,18 @@ class WouldYouPrefersControllerTest < ActionController::TestCase
     end
 
     assert_redirected_to would_you_prefers_path
+  end
+  
+  def test_show_should_increase_number_of_views
+    w = WouldYouPrefer.find(:first)
+    assert_difference 'w.viewed' do
+      get :show, :id => w.id
+      w.reload
+    end
+  end
+    
+  protected
+  def superclassica
+    {:first_option => 'prenderlo in culo', :second_option => 'fare una pompa'}
   end
 end
