@@ -5,9 +5,11 @@ would_you_prefer_one:
   first_option: MyString
   second_option: MyString
   published_at: 2008-07-21 16:10:49
+  viewed: 0
 
 would_you_prefer_two:
   title: MyString
   first_option: MyString
   second_option: MyString
   published_at: 2008-07-21 16:10:49
+  viewed: 38

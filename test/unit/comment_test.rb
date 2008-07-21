@@ -27,7 +27,7 @@ class CommentTest < ActiveSupport::TestCase
 protected
 
   def create_would(options = {})
-    Comment.create({:would_you_prefer => would_you_prefers(:one), :body => 'Hello'}.merge(options))
+    Comment.create({:would_you_prefer => would_you_prefers(:would_you_prefer_one), :body => 'Hello'}.merge(options))
   end
   
 end

@@ -17,6 +17,7 @@ class WouldYouPrefersController < ApplicationController
   # GET /would_you_prefers/1.xml
   def show
     @would_you_prefer = WouldYouPrefer.find(params[:id])
+    @would_you_prefer.view!
 
     respond_to do |format|
       format.html # show.html.erb
